@@ -25,6 +25,8 @@
 	This table will be generate in the exact spot where the script is called in the body
 	of the HTML.
 */
+"use strict";
+
 jQuery.getScript("http://www.parsecdn.com/js/parse-1.4.2.min.js", function() {
 	Parse.initialize("8BAuipgqsxpJMvqxfX6HWYXQTxvfopICfC9w1HOG", "lhOPBC5jvcBbs6NTj5yijiVhrG7jEvnFTrdPEFpg");
 	
