@@ -10,8 +10,9 @@
 	classifying the elements as children of #pmt_table in the site's stylesheet will make those
 	attributes apply only to these tables.
 
-	jQuery must be enabled on the site, if not already, and this script must be put into some 
-	directory in the file path.
+	jQuery must be enabled on the site, if not already. The script itself is hosted on GitHub
+	on my personal account, but if preferred can be hosted within PMT itself, as long as the 
+	link is updated on the player pages.
 */
 
 /* 
