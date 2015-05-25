@@ -30,7 +30,7 @@
 jQuery.getScript("http://www.parsecdn.com/js/parse-1.4.2.min.js", function() {
 	Parse.initialize("8BAuipgqsxpJMvqxfX6HWYXQTxvfopICfC9w1HOG", "lhOPBC5jvcBbs6NTj5yijiVhrG7jEvnFTrdPEFpg");
 	
-	generate_default_table();
+	//generate_default_table();
 	var player, id = document.getElementById("pmt_table").getAttribute("data-player");
 
 	if (typeof id === "undefined") console.log("No Player ID found!");
