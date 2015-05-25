@@ -35,7 +35,7 @@ jQuery.getScript("http://www.parsecdn.com/js/parse-1.4.2.min.js", function() {
 
 	if (typeof id === "undefined") console.log("No Player ID found!");
 	else {
-		var player_found = get_player(id);
+		//var player_found = get_player(id);
 		if (player === false) console.log("Invalid Player ID found!");
 	}
 });
