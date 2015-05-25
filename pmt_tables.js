@@ -163,21 +163,22 @@ function fill_values (player) {
 		values from the Parse database.
 */
 
+/*
 function generate_default_table () {
-	/* Find the element where the table will be placed */
+	// Find the element where the table will be placed 
 	var body = document.getElementsByTagName("BODY")[0];
 	
-	/* Create the outer table div */
+	// Create the outer table div 
 	var table = document.createElement('div');
 	table.setAttribute('style', 'border:1px solid black;float:left;width:90%;margin:15px;padding:10px;');
 
-	/* Create the left column div */
+	// Create the left column div
 	var left_col = document.createElement('div');
 	left_col.setAttribute('style', 'float:left;width:50%;');
 	
-	/* 
-		Create default PLAYER NAME span 
-	*/
+	// 
+	//	Create default PLAYER NAME span 
+	//
 	var name_span = document.createElement('span');
 	name_span.setAttribute('style', 'padding-right:20px;');
 	var name_label = document.createElement('b');
@@ -188,9 +189,9 @@ function generate_default_table () {
 	name_span.appendChild(name_label);
 	name_span.appendChild(name_val);
 	
-	/* 
-		Create default TWITTER HANDLE span
-	*/
+	//
+	//	Create default TWITTER HANDLE span
+	//
 	var handle_span = document.createElement('span');
 	var handle_label = document.createElement('b');
 	handle_label.innerHTML = 'Twitter Handle: ';
@@ -201,9 +202,9 @@ function generate_default_table () {
 	handle_span.appendChild(handle_label);
 	handle_span.appendChild(handle_link);
 	
-	/* 
-		Create default HOMETOWN span 
-	*/
+	// 
+	//	Create default HOMETOWN span 
+	//
 	var home_town_span = document.createElement('span');
 	home_town_span.setAttribute('style', 'padding-right:20px;');
 	var home_town_label = document.createElement('b');
@@ -214,9 +215,9 @@ function generate_default_table () {
 	home_town_span.appendChild(home_town_label);
 	home_town_span.appendChild(home_town_val);
 	
-	/* 
-		Create default SCHOOL span 
-	*/
+	//
+	//	Create default SCHOOL span 
+	//
 	var school_span = document.createElement('span');
 	var school_label = document.createElement('b');
 	school_label.innerHTML = "School: ";
@@ -227,9 +228,9 @@ function generate_default_table () {
 	school_span.appendChild(school_val);
 	
 		
-	/* 
-		Create default POSITION span 
-	*/
+	//
+	//	Create default POSITION span 
+	//
 	var position_span = document.createElement('span');
 	position_span.setAttribute('style', 'padding-right:20px;');
 	var position_label = document.createElement('b');
@@ -240,9 +241,9 @@ function generate_default_table () {
 	position_span.appendChild(position_label);
 	position_span.appendChild(position_val);
 	
-	/* 
-		Create default HITS/THROWS span 
-	*/
+	// 
+	//	Create default HITS/THROWS span 
+	//
 	var bats_throws_span = document.createElement('span');
 	var bats_throws_label = document.createElement('b');
 	bats_throws_label.innerHTML = "Bats/Throws: ";
@@ -260,9 +261,9 @@ function generate_default_table () {
 	bats_throws_span.appendChild(throws_val);
 	
 	
-	/*
-		Create default YEAR ACQUIRED span
-	*/
+	//
+	//	Create default YEAR ACQUIRED span
+	//
 	var year_acquired_span = document.createElement('span');
 	year_acquired_span.setAttribute('style', 'padding-right:20px;');
 	var year_acquired_label = document.createElement('b');
@@ -273,9 +274,9 @@ function generate_default_table () {
 	year_acquired_span.appendChild(year_acquired_label);
 	year_acquired_span.appendChild(year_acquired_val);
 	
-	/*
-		Create default DRAFTED span
-	*/
+	//
+	//	Create default DRAFTED span
+	//
 	var drafted_span = document.createElement('span');
 	var drafted_label = document.createElement('b');
 	drafted_label.innerHTML = "Drafted: ";
@@ -285,7 +286,7 @@ function generate_default_table () {
 	drafted_span.appendChild(drafted_label);
 	drafted_span.appendChild(drafted_val);
 	
-	/* Append all individual elements to the left column div */
+	// Append all individual elements to the left column div
 	left_col.appendChild(name_span);
 	left_col.appendChild(document.createElement('br'));
 	left_col.appendChild(handle_span);
@@ -299,13 +300,13 @@ function generate_default_table () {
 	left_col.appendChild(year_acquired_span);
 	left_col.appendChild(drafted_span);	
 	
-	/* Create the left column div */
+	// Create the left column div
 	var right_col = document.createElement('div');
 	right_col.setAttribute('style', 'float:right;width:50%;');
 	
-	/*
-		Create default BORN span
-	*/
+	//
+	//	Create default BORN span
+	//
 	var born_span = document.createElement('span');	
 	var born_label = document.createElement('b');
 	born_label.innerHTML = "Born: ";
@@ -315,9 +316,9 @@ function generate_default_table () {
 	born_span.appendChild(born_label);
 	born_span.appendChild(born_val);
 	
-	/*
-		Create default HEIGHT/WEIGHT span
-	*/
+	//
+	//	Create default HEIGHT/WEIGHT span
+	//
 	var height_weight_span = document.createElement('span');
 	var height_label = document.createElement('b');
 	height_label.innerHTML = "Height: ";
@@ -335,9 +336,9 @@ function generate_default_table () {
 	height_weight_span.appendChild(weight_label);
 	height_weight_span.appendChild(weight_val);
 	
-	/*
-		Create default SIGNED DATE span
-	*/
+	//
+	//	Create default SIGNED DATE span
+	//
 	var signed_span = document.createElement('span');
 	signed_span.setAttribute('style', 'padding-right:20px;');
 	var signed_label = document.createElement('b');
@@ -348,9 +349,9 @@ function generate_default_table () {
 	signed_span.appendChild(signed_label);
 	signed_span.appendChild(signed_val);
 	
-	/*
-		Create default BONUS span
-	*/
+	//
+	//	Create default BONUS span
+	//
 	var bonus_span = document.createElement('span');
 	var bonus_label = document.createElement('b');
 	bonus_label.innerHTML = "Bonus: ";
@@ -360,9 +361,9 @@ function generate_default_table () {
 	bonus_span.appendChild(bonus_label);
 	bonus_span.appendChild(bonus_val);
 	
-	/*
-		Create default MILB OPTIONS span
-	*/
+	//
+	//	Create default MILB OPTIONS span
+	//
 	var options_span = document.createElement('span');
 	var options_label = document.createElement('b');
 	options_label.innerHTML = "Options Remaining: ";
@@ -372,9 +373,9 @@ function generate_default_table () {
 	options_span.appendChild(options_label);
 	options_span.appendChild(options_val);
 	
-	/*
-		Create default RULE FIVE ELIGIBILITY span
-	*/
+	//
+	//	Create default RULE FIVE ELIGIBILITY span
+	//
 	var rule_five_span = document.createElement('span');
 	rule_five_span.setAttribute('style', 'padding-right:20px;');
 	var rule_five_label = document.createElement('b');
@@ -385,9 +386,9 @@ function generate_default_table () {
 	rule_five_span.appendChild(rule_five_label);
 	rule_five_span.appendChild(rule_five_val);
 	
-	/*
-		Create default MILB FREE AGENCY span
-	*/
+	//
+	//	Create default MILB FREE AGENCY span
+	//
 	var milb_fa_span = document.createElement('span');
 	var milb_fa_label = document.createElement('b');
 	milb_fa_label.innerHTML = "MiLB Free Agency: ";
@@ -411,10 +412,10 @@ function generate_default_table () {
 	
 	table.appendChild(left_col);
 	table.appendChild(right_col);
-	body.appendChild(table);
-	
-	
+	body.appendChild(table);	
 }
+
+*/
 
 // Simple function to append the appropriate suffix to any number (in a string)
 // For example, 1 -> 1st, 12 -> 12th, 323 -> 323rd, etc.
