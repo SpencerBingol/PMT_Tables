@@ -33,11 +33,11 @@ jQuery.getScript("http://www.parsecdn.com/js/parse-1.4.2.min.js", function() {
 	//generate_default_table();
 	var player, id = document.getElementById("pmt_table").getAttribute("data-player");
 
-	//if (typeof id === "undefined") console.log("No Player ID found!");
-	//else {
-	//	var player_found = get_player(id);
-	//	if (player === false) console.log("Invalid Player ID found!");
-	//}
+	if (typeof id === "undefined") console.log("No Player ID found!");
+	else {
+		var player_found = get_player(id);
+		if (player === false) console.log("Invalid Player ID found!");
+	}
 });
 
 /*
@@ -163,7 +163,7 @@ function fill_values (player) {
 		values from the Parse database.
 */
 
-/*
+
 function generate_default_table () {
 	// Find the element where the table will be placed 
 	var body = document.getElementsByTagName("BODY")[0];
@@ -414,8 +414,6 @@ function generate_default_table () {
 	table.appendChild(right_col);
 	body.appendChild(table);	
 }
-
-*/
 
 // Simple function to append the appropriate suffix to any number (in a string)
 // For example, 1 -> 1st, 12 -> 12th, 323 -> 323rd, etc.
