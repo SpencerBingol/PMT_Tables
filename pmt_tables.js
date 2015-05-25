@@ -33,11 +33,11 @@ jQuery.getScript("http://www.parsecdn.com/js/parse-1.4.2.min.js", function() {
 	//generate_default_table();
 	var player, id = document.getElementById("pmt_table").getAttribute("data-player");
 
-	if (typeof id === "undefined") console.log("No Player ID found!");
-	else {
-		var player_found = get_player(id);
-		if (player === false) console.log("Invalid Player ID found!");
-	}
+	//if (typeof id === "undefined") console.log("No Player ID found!");
+	//else {
+	//	var player_found = get_player(id);
+	//	if (player === false) console.log("Invalid Player ID found!");
+	//}
 });
 
 /*
